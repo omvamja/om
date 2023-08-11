@@ -3,7 +3,7 @@
    
 void main (){
 
-int a,b,c;
+int a,b,c,m;
 
 	printf("enter the number :-");
 	scanf("%d",&a);
@@ -12,12 +12,9 @@ int a,b,c;
 		printf("enter the number :-");
 	scanf("%d",&c);
 	
-	if(a>b){
-		printf("%d is max",a);
-		
-	}
+	m = (a<b)?((a<c)?a:c):((b<c)?b:c);
+printf("the minimum number is %d",m);
 
 
-}
 }
 
